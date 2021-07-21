@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkGrey"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:layout_margin="3dp"
+        android:background="@drawable/gradient"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/workingsTextView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingRight="30dp"
+            android:text=""
+            android:textAlignment="textEnd"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:id="@+id/resultTextView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingRight="30dp"
+            android:text="0.0"
+            android:textAlignment="textEnd"
+            android:textColor="@color/white"
+            android:textSize="45sp"
+            tools:ignore="RtlCompat" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/clear"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/gradient"
+                android:gravity="center"
+                android:onClick="clear"
+                android:text="C"
+                android:textColor="@color/orange"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/bracket"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/gradient"
+                android:gravity="center"
+                android:onClick="delete"
+                android:text="Del"
+                android:textColor="@color/green"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:id="@+id/power"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/gradient"
+                android:gravity="center"
+                android:onClick="brackets"
+                android:text="()"
+                android:textColor="@color/green"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/division"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/gradient"
+                android:gravity="center"
+                android:onClick="division"
+                android:text="÷"
+                android:textColor="@color/green"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/seven"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/gradient"
+                android:gravity="center"
+                android:onClick="seven"
+                android:text="7"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/eight"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/gradient"
+                android:gravity="center"
+                android:onClick="eight"
+                android:text="8"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/nine"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/gradient"
+                android:gravity="center"
+                android:onClick="nine"
+                android:text="9"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/multiply"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/gradient"
+                android:gravity="center"
+                android:onClick="multiply"
+                android:text="x"
+                android:textColor="@color/green"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/four"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/gradient"
+                android:gravity="center"
+                android:onClick="four"
+                android:text="4"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/five"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/gradient"
+                android:gravity="center"
+                android:onClick="five"
+                android:text="5"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/six"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/gradient"
+                android:gravity="center"
+                android:onClick="six"
+                android:text="6"
+                android:textColor="@color/white"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:id="@+id/substract"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/gradient"
+                android:gravity="center"
+                android:onClick="minus"
+                android:text="-"
+                android:textColor="@color/green"
+                android:textSize="45sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/one"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/gradient"
+                android:gravity="center"
+                android:onClick="one"
+                android:text="1"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/two"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/gradient"
+                android:gravity="center"
+                android:onClick="two"
+                android:text="2"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/three"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/gradient"
+                android:gravity="center"
+                android:onClick="three"
+                android:text="3"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/addition"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/gradient"
+                android:gravity="center"
+                android:onClick="plus"
+                android:text="+"
+                android:textColor="@color/green"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/plusminus"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/gradient"
+                android:gravity="center"
+                android:onClick="plusminus"
+                android:text="+/-"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+            <TextView
+                android:id="@+id/decimal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/gradient"
+                android:gravity="center"
+                android:onClick="decimal"
+                android:text="."
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/zero"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/gradient"
+                android:gravity="center"
+                android:onClick="zero"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:id="@+id/equal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/gradient1"
+                android:gravity="center"
+                android:onClick="equals"
+                android:text="="
+                android:textColor="@color/white"
+                android:textSize="40sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
